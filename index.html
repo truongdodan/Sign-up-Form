@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join terraria</title>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #signupForm {
+            width: 1200px;
+            height: 100vh;
+            display: flex;
+            margin: 0 auto;
+            background-color: hsl(0, 0%, 90%);
+        }
+        .left-section-wrapper {
+            flex: 1.25 1 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* background image */
+            background-image: url(./images/lake-snowy-mountains-terraria-ph9xtx00kr312hmj.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+        .right-section-wrapper {
+            flex: 2 1 0;
+            padding-top: 13%;
+            background-color:#f9fafb;
+        }
+
+        /* left section */
+        .logo {
+            background-color: hsl(0, 0%, 0%, 30%);
+            text-align: center;
+            padding: 0.8rem 0rem;
+            margin-top: 40%;
+        }
+        .logo img {
+            width: 80%;
+            height: auto;
+        }
+        .photo-credit {
+            position: absolute;
+            bottom: 0.5rem;
+            font-size: 0.8rem;
+            color: white;
+        }
+        .photo-credit a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        /* right section */
+        .right-section-wrapper > * {
+            padding: 0rem 2rem;
+        }
+        .right-section-wrapper > h3 {
+            margin-bottom: 1rem;
+        }
+        .input-field {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-column-gap: 3rem;
+            background-color: white;
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem 2rem;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1)
+        }
+        .input-field h3 {
+            grid-column: span 8;
+            margin-bottom: 1rem;
+        }
+        .input-field > div {
+            grid-column: span 3;
+        }
+        .input-field .input {
+            margin: 1rem 0rem;
+        }
+        .input-field input {
+            width: 100%;
+            height: 1.75rem;
+            border: 1px #ebedf0 solid;
+            border-radius: 0.2rem;
+            padding: 0rem 0.5rem;
+        }
+        .input-field input:focus {
+            outline: none;
+            border: 1.5px #1d4ed8 solid;
+            box-shadow: 1px 2px 4px rgb(0, 0, 0, 0.2);
+        }
+        .input-field input[type=password]:invalid {
+            outline: none;
+            border: 1.5px #ca5454 solid;
+        }
+        .input-field #passwordErrorMsg {
+            font-size: 0.7rem;
+            color: #ca5454;
+            font-weight: 550;
+            display: none;
+        }
+        .input-field input[type=password]:invalid + #passwordErrorMsg {
+            font-size: 0.7rem;
+            color: #ca5454;
+            font-weight: 550;
+            display: block;
+        }
+        .input-field label {
+            font-weight: 550;
+            opacity: 0.5;
+            font-size: 0.8rem;
+        }
+        .input-field input::-webkit-outer-spin-button,
+        .input-field input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+        #submitButton {
+            padding: 0.8rem 3rem;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 0.3rem;
+            background-color: #596d48;
+            margin-bottom: 2rem;
+        }
+        .login-text > a {
+            text-decoration: none;
+            color: #596d48;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" id="signupForm">
+        <div class="left-section-wrapper">
+            <div class="logo">
+                <img src="./images/terraria_logo.png" alt="terraria logo">
+            </div>
+            <div class="photo-credit">Photo source: <a href="https://www.wallpaperflare.com/">wallpaperflare</a></div>
+        </div>
+        <div class="right-section-wrapper">
+            <h3>Dig, Fight, Explore, Build: The very world is at your fingertips as you fight for survival, fortune, and glory.</h3>
+            <h3><em>In the World of Terraria, the choice is yours!</em></h3>
+            <div class="input-field">
+                <h3>Let's dig in!</h3>
+                <div class="left">
+                    <div class="input first-name">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" name="FirstName" id="firstName" value="" required>
+                    </div>
+                    <div class="input email">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="Email" id="email" value="" required>
+                    </div>
+                    <div class="input password">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="Password" id="password" value="" required>
+                        <p id="passwordErrorMsg">*Password does not match</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="input last-name">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="LastName" id="lastName" value="" required>
+                    </div>
+                    <div class="input number">
+                        <label for="phoneNumber">PHONE NUMBER</label>
+                        <input type="number" name="PhoneNumber" id="phoneNumber" value="" required>
+                    </div>
+                    <div class="input confirm-password">
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input type="password" name="ConfirmPassword" id="confirmPassword" value="" required>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-section-wrapper">
+                <input type="submit" id="submitButton" value="Create account">
+                <p class="login-text">Already have an account? <a href="#">Login</a></p>    
+            </div>
+        </div>
+    </form>
+</body>
+</html>
