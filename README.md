@@ -1,1 +1,2 @@
-#Terraria Sign-up Form
+# Sign-up Form
+Terraria sign-up form
